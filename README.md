@@ -12,9 +12,10 @@ The artifact currently supports simple assignment statemnts of the form x:=x+r (
 ## File Structure
 There are several folders in the artifact. Here is a description of each:
 * Inputs: contains all the twenty experimental examples (see Section 9.2 in the paper) and the related txt files about their initial valuations
+* Outputs: When an experiment is run, the final output is automatically put in this folder.
+* Expected Outputs: contains the final outputs of the experimental examples as obtained by us (see Table 2 and Table 3 in Section 9.2)
 * CFG: contains a C++ tool for obtaining Control Flow Graphs of programs
 * Synthesis: contains a Matlab implementation for obtaining the results in our paper
-* Expected Outputs: contains the final outputs of the experimental examples as obtained by us (see Table 2 and Table 3 in Section 9.2)
 * Custom: contains two folders named Custom_inputs and Custom_outputs, the users can put the custom inputs into Custom_inputs, and the final outputs will be put into Custom_outputs automatically by our bash scripts.
 
 ## Prerequisites
@@ -23,6 +24,20 @@ Our codes are written in C++ and Matlab. C++ is used for creating the Control-Fl
 * g++: for compiling C++ sources
 *	An environment capable of running Bash
 *	Matlab (make sure that the “matlab” command is enabled in the terminal. In Ubuntu this can be done by installing the “matlab-support” package)
+
+## Compilation
+To compile the codes, open a terminal in the “Tool” folder and run this command: <br>
+./compile.sh <br>
+You need to have a C++-11-compliant version of g++ installed.
+
+
+# Correspondence between the Paper and the Artifact
+The file “example name.pdf” contains a description of the correspondence between the example programs in the artifact and those in the paper (see Table 2 and 3 in Section 9.2). 
+
+# Obtaining the Results Reported in the Paper
+To obtain all the results reported in the paper, simply open a terminal in the “Tool” folder and run the following command:<br>
+./main-experiment.sh <br>
+When the execution ends, all obtained results will be available in the “Outputs” folder. These results match Tables 2 and 3 in our paper. 
 
 
 
