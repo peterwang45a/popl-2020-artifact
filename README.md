@@ -2,7 +2,7 @@ Proving Expected Sensitivity of Probabilistic Programs with Randomized Variable-
 ===========
 Guide to the Artifact Accompanying the Paper
 --------
-For convenience, we put a linux virtual machine in the $\color{red}{Google Drive}$. It is of big size (nearly 9 GB) because it contains all the dependencies and prerequisites. We put the artifact files in /home/Tool. You can download it and easily take an evaluation.<br>
+For convenience, we put a linux virtual machine in the <font color="red">Google Drive</font>. It is of big size (nearly 9 GB) because it contains all the dependencies and prerequisites. We put the artifact files in /home/Tool. You can download it and easily take an evaluation.<br>
 
 # Overview
 This artifact contains our implementation of the RSM synthesis algorithm as described in the paper. In this work, we consider probabilistic while loops where the number of iterations is not fixed, but randomized and depends on the initial input values. The aim of this artifact is to synthesize linear RSM-maps for such programs, together with other conditions such as lipschitz continuity, bounded update, RSM-continuity and difference bound (which helps prove expected sensitivity of such programs).
