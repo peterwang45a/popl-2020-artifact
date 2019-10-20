@@ -2,6 +2,8 @@ Proving Expected Sensitivity of Probabilistic Programs with Randomized Variable-
 ===========
 Guide to the Artifact Accompanying the Paper
 --------
+For convenience, we put a linux virtual machine in the Google Drive, which contains all the dependencies and prerequisites. It is of a big size (nearly 9 GB) because we've installed a Matlab software in advance. We put the artifact files in /home/Tool. You can download it and easily take an evaluation.<br>
+
 # Overview
 This artifact contains our implementation of the RSM synthesis algorithm as described in the paper. In this work, we consider probabilistic while loops where the number of iterations is not fixed, but randomized and depends on the initial input values. The aim of this artifact is to synthesize linear RSM-maps for such programs, together with other conditions such as lipschitz continuity, bounded update, RSM-continuity and difference bound (which helps prove expected sensitivity of such programs).
 
@@ -64,12 +66,15 @@ runs the experiment on the "mini-roulette variant" only. <br>
 
 # Running on a Custom Input
 To run the algorithm on a custom program, please follow these steps: <br>
-1.**Create an input file**  whose filename suffix is ".program". This file contains a program, its preconditions, loop gurads and post conditions, and the distributions used for its sampling variables. See the example programs whose filename suffix are ".program" in the “Inputs” folder. Basically, the file should begin with the distributions. This is followed by one # sign. Next, put the preconditions and loop guards in one square bracket. That is followed by one # sign. Then, put the preconditions and post conditions in the bracket followed by one # sign. The main program starts after the third #. We assume this input file is called “input.program” and put it in the "Custom/Custom_inputs" folder.
-2.**Create a configuration file** named “inputconfig.txt” in the “Custom/Custom_inputs” folder. The configuration file contains the initial valuations for the custom program. See the example configuration files (whose suffix are "config.txt") in the “Inputs” folder.
+1.**Create an input file**  whose filename suffix is ".program". This file contains a program, its preconditions, loop gurads and post conditions, and the distributions used for its sampling variables. See the example programs whose filename suffix are ".program" in the “Inputs” folder. Basically, the file should begin with the distributions. This is followed by one # sign. Next, put the preconditions and loop guards in one square bracket. That is followed by one # sign. Then, put the preconditions and post conditions in the bracket followed by one # sign. The main program starts after the third #. We assume this input file is called “input.program” and put it in the "Custom/Custom_inputs" folder.<br>
+2.**Create a configuration file** named “inputconfig.txt” in the “Custom/Custom_inputs” folder. The configuration file contains the initial valuations for the custom program. See the example configuration files (whose suffix are "config.txt") in the “Inputs” folder.<br>
 3.Run the Script by opening a terminal in the “Tool” folder and running this command:<br>
 ./run-example.sh input <br>
-4.The final output will be put in the "Custom/Custom_outputs" folder automatically.
-**Note:** see "readme.txt" in the "Custom" folder, we also put one sample program and its output respectively in the "Custom/Custom_inputs" folder and "Custom/Custom_outputs" folder. (The jpg file describes this sample program.)
+4.The final output will be put in the "Custom/Custom_outputs" folder automatically. <br>
+**Note:** see "readme.txt" in the "Custom" folder, we also put one sample program and its output respectively in the "Custom/Custom_inputs" folder and "Custom/Custom_outputs" folder. (The jpg file describes this sample program).
+
+## If there is any problem, welcome to email wangpeixin@sjtu.edu.cn or peter007008@qq.com.
+
 
 
 
