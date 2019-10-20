@@ -38,7 +38,7 @@ The file “example name.pdf” contains a description of the correspondence bet
 To obtain all the results reported in the paper, simply open a terminal in the “Tool” folder and run the following command:<br>
 ./main-experiment.sh <br>
 When the execution ends, all obtained results will be available in the “Outputs” folder (in "Outputs/Table2" folder or "Outputs/Table3" folder). These results match Tables 2 and 3 in our paper. <br>
-&emsp;
+<br>
 To obtain Table 2 or table 3 separately, you can use the following command:<br>
 ./main-experiment.sh table2 <br>
 or <br>
