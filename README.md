@@ -14,7 +14,7 @@ We assume that the input programs have simple assignment statemnts of the form x
 ## File Structure
 There are several folders in the artifact. Here is a description of each:
 * Inputs: contains all the twenty experimental examples (see Section 9.2 in the paper) and the related txt files about their initial valuations
-* Outputs: contains two folders named "Table2" and "Table3". When an experiment is run, the final output (which is a txt file named "*_log.txt") is automatically put in "Table2" or "Table3" (which corresponds to the results in Section 9.2, namely Table 2 and Table 3)
+* Outputs: contains two folders named "Table2" and "Table3". These two folders correspond to the results in Section 9.2, namely Table 2 and Table 3. When an experiment is run, the final output (which is a txt file named "*_log.txt") is automatically put in "Table2" or "Table3".
 * Expected Outputs: contains the final outputs of the experimental examples as obtained by us (see Table 2 and Table 3 in Section 9.2)
 * CFG: contains a C++ tool for obtaining Control Flow Graphs of programs
 * Synthesis: contains a Matlab implementation for obtaining the results in our paper
