@@ -32,17 +32,17 @@ You need to have a C++-11-compliant version of g++ installed.
 
 
 # Correspondence between the Paper and the Artifact
-The file “example name.pdf” contains a description of the correspondence between the example programs in the artifact and those in the paper (see Table 2 and 3 in Section 9.2). For example, in the paper there is an example named "mini-roulette", we call it "mini" for brevity in the artifact.
+The file “example name.pdf” contains a description of the correspondence between the example programs in the artifact and those in the paper (see Table 2 and 3 in Section 9.2). For example, in the paper there is an example named "mini-Roulette", we call it "mini" for brevity in the artifact.
 
 # Obtaining the Results Reported in the Paper
 To obtain all the results reported in the paper, simply open a terminal in the “Tool” folder and run the following command:<br>
-./main-experiment.sh <br>
+./main-examples.sh <br>
 When the execution ends, all obtained results will be available in the “Outputs” folder (actually in "Outputs/Table2" folder or "Outputs/Table3" folder). These results match Tables 2 and 3 in our paper. <br>
 <br>
 To obtain Table 2 or table 3 separately, you can use the following command:<br>
-./main-experiment.sh table2 <br>
+./main-examples.sh table2 <br>
 or <br>
-./main-experiment.sh table3 <br>
+./main-examples.sh table3 <br>
 The obtained results will also be put in "Outputs/Table2" folder or "Outputs/Table3" folder.<br>
 ## Warning
 The runtime may be a little longer than those in our experimental results (we made a test in the virtual machine and it was within half a minute for each example). This is because we are including a trial version of Matlab in the virtual machine (because Matlab is proprietary software). This trial version does not use multithreading and is significantly slower than a full-fledged Matlab. <br>
@@ -56,8 +56,11 @@ We have pre-installed a trial version of Matlab on the Virtual Machine. If you a
 We have listed all the twenty experimental examples. See “example name.pdf” for the correspondence between the example names in the artifact and those in the paper. To run the experiment on a single example program, e.g. program x, you can use the following command:<br>
 ./run-example.sh x <br>
 For example, <br>
-./run-example.sh mini
-runs the experiment on the "mini-roulette" only. 
+./run-example.sh mini <br>
+runs the experiment on the "mini-Roulette" only. <br>
+./run-example.sh vmini <br>
+runs the experiment on the "mini-roulette variant" only. 
+**Note:** Please use the simplified example names in the artifact to run the above commands.
 
 # Running on a Custom Input
 To run the algorithm on a custom program, please follow these steps:
