@@ -11,6 +11,7 @@ This artifact contains our implementation of the RSM synthesis algorithm as desc
 We assume that the input programs have simple assignment statemnts of the form x:=x+r (where r is a sampling variable with a predefined probability distribution), so it may fail for complex custom instances as well as these programs which have no linear RSM maps.
 
 # File Structure, Prerequisites and Compilation
+
 ## File Structure
 There are several folders in the artifact. Here is a description of each:
 * Inputs: contains all the twenty experimental examples (see page 24, Section 9.2 in the paper) and the related txt files about their initial valuations
