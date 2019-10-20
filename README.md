@@ -5,8 +5,8 @@ Guide to the Artifact Accompanying the Paper
 # Overview
 This artifact contains our implementation of the RSM synthesis algorithm as described in the paper. In this work, we consider probabilistic while loops where the number of iterations is not fixed, but randomized and depends on the initial input values. The aim of this artifact is to synthesize linear RSM-maps for such programs, together with other conditions such as lipschitz continuity, bounded update, RSM-continuity and difference bound (which helps prove expected sensitivity of such programs).
 
-# Note
-The artifact currently supports simple assignment statemnts of the form x:=x+r (where r is a sampling variable with a predefined probability distribution), so it may fail for complex custom inputs as well as these programs which have no linear RSM maps.
+# Assumptions
+We assume that the input programs have simple assignment statemnts of the form x:=x+r (where r is a sampling variable with a predefined probability distribution), so it may fail for complex custom instances as well as these programs which have no linear RSM maps.
 
 # File Structure, Prerequisites and Compilation
 ## File Structure
@@ -32,19 +32,35 @@ You need to have a C++-11-compliant version of g++ installed.
 
 
 # Correspondence between the Paper and the Artifact
-The file “example name.pdf” contains a description of the correspondence between the example programs in the artifact and those in the paper (see Table 2 and 3 in Section 9.2). 
+The file “example name.pdf” contains a description of the correspondence between the example programs in the artifact and those in the paper (see Table 2 and 3 in Section 9.2). For example, in the paper there is an example named "mini-roulette", we call it "mini" for brevity in the artifact.
 
 # Obtaining the Results Reported in the Paper
 To obtain all the results reported in the paper, simply open a terminal in the “Tool” folder and run the following command:<br>
 ./main-experiment.sh <br>
-When the execution ends, all obtained results will be available in the “Outputs” folder (in "Outputs/Table2" folder or "Outputs/Table3" folder). These results match Tables 2 and 3 in our paper. <br>
+When the execution ends, all obtained results will be available in the “Outputs” folder (actually in "Outputs/Table2" folder or "Outputs/Table3" folder). These results match Tables 2 and 3 in our paper. <br>
 <br>
 To obtain Table 2 or table 3 separately, you can use the following command:<br>
 ./main-experiment.sh table2 <br>
 or <br>
 ./main-experiment.sh table3 <br>
+The obtained results will also be put in "Outputs/Table2" folder or "Outputs/Table3" folder.<br>
+## Warning
+The runtime may be a little longer than those in our experimental results (we made a test in the virtual machine and it was within half a minute for each example). This is because we are including a trial version of Matlab in the virtual machine (because Matlab is proprietary software). This trial version does not use multithreading and is significantly slower than a full-fledged Matlab. <br>
 
+**Note:** You can also run the experiment on a single example program or your own custom input. See below for more details.
 
+# Matlab License
+We have pre-installed a trial version of Matlab on the Virtual Machine. If you are running the experiments on your own machine, or if Matlab asks for a license, you can obtain a free 30-day trial license at https://www.mathworks.com/campaigns/products/trials.html.
+
+# Running on a Single Example
+We have listed all the twenty experimental examples. See “example name.pdf” for the correspondence between the example names in the artifact and those in the paper. To run the experiment on a single example program, e.g. program x, you can use the following command:<br>
+./run-example.sh x <br>
+For example, <br>
+./run-example.sh mini
+runs the experiment on the "mini-roulette" only. 
+
+# Running on a Custom Input
+To run the algorithm on a custom program, please follow these steps:
 
 
 
