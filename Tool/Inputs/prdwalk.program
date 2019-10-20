@@ -1,0 +1,18 @@
+r_1~CUnif(0,2);
+r_2~CUnif(0,5);
+#
+[1000-p_x>=0]
+#
+[p_x-1000>=0 and 1005-p_x>=0]
+#
+while p_x<=1000 do
+   if prob(0.5) then
+      p_x:=p_x+r_1
+   else
+      p_x:=p_x+r_2   
+   fi
+od;
+end
+
+
+

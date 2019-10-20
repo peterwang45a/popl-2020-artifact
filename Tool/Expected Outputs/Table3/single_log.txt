@@ -1,0 +1,14 @@
+Example:single
+Analysis Finished Successfully.
+Epsilon = 1.000000
+L= 1.000000
+Sensitivity Type: Non-expansive Expected linear-sensitive
+
+Data Generated for Table 3 in the paper:
+Runtime = 9.482782 seconds
+eta(b)=16.666666666666666666666666666667 - 0.83333333333333333333333333333333*p_x
+ 
+K = -1.250000
+d = 2.100000
+M = 0.833333
+c = 1.750000

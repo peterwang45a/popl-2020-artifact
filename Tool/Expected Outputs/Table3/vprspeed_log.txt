@@ -1,0 +1,14 @@
+Example:vprspeed
+Analysis Finished Successfully.
+Epsilon = 1.000000
+L= 1.000000
+Sensitivity Type: Non-expansive Expected linear-sensitive
+
+Data Generated for Table 3 in the paper:
+Runtime = 10.261148 seconds
+eta(b)=533.33333333333333333333333333333 - 0.53333333333333333333333333333333*p_x
+ 
+K = -2.666667
+d = 5.000000
+M = 0.533333
+c = 2.666667

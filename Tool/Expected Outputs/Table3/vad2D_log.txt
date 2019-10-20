@@ -1,0 +1,14 @@
+Example:vad2D
+Analysis Finished Successfully.
+Epsilon = 1.000000
+L= 1.000000
+Sensitivity Type: Non-expansive Expected linear-sensitive
+
+Data Generated for Table 3 in the paper:
+Runtime = 12.205479 seconds
+eta(b)=0.60606060606060606060606060606061*p_y - 0.60606060606060606060606060606061*p_x
+ 
+K = -2.424242
+d = 4.000000
+M = 1.212121
+c = 2.424242

@@ -1,0 +1,2 @@
+Please create a file named "input.program" and the corresponding file named "input"+"config.txt" in the "Custom_inputs" folder, then enter the "Tool" folder and run the command ./run-example.sh input. The output will be put in Custom/Custom_outputs. You can see an example named "example.program" and a txt file named "exampleconfig.txt"in "Custom_inputs", please follow this format.
+(The jpg file matches this example program)

@@ -1,0 +1,16 @@
+r_1~CUnif(-0.3,0.3);
+r_2~CUnif(-0.2,0.2);
+#
+[p_x1>=0 and 20-p_x1>=0 and p_x2>=0 and 20-p_x2>=0 and p_n>=0]
+#
+[p_x1-20>=0 and 21.5-p_x1>=0 and p_n>=0]
+#
+while p_x1>=0 and p_x1<=20 and p_x2>=0 and p_x2<=20 do
+    p_x1:=p_x1+0.03*(10-p_x1)+0.04*(p_x2-p_x1)+1.5+r_1;
+    p_x2:=p_x2+0.02*(10-p_x2)+0.04*(p_x1-p_x2)+r_2;
+    p_n:=p_n+1
+od;
+end
+
+
+
