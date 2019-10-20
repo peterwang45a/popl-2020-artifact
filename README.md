@@ -55,7 +55,7 @@ The runtime may be a little longer than those in our experimental results (we ma
 We have pre-installed a trial version of Matlab on the Virtual Machine. If you are running the experiments on your own machine, or if Matlab asks for a license, you can obtain a free 30-day trial license at https://www.mathworks.com/campaigns/products/trials.html.
 
 # Running on a Single Example
-We have listed all the twenty experimental examples. See “example name.pdf” for the correspondence between the example names in the artifact and those in the paper. To run the experiment on a single example program, e.g. program x, you can use the following command:<br>
+We have listed all the twenty experimental examples. See `“example name.pdf”` for the correspondence between the example names in the artifact and those in the paper. To run the experiment on a single example program, e.g. program x, you can use the following command:<br>
 ./run-example.sh x <br>
 For example, <br>
 ./run-example.sh mini <br>
