@@ -1,0 +1,14 @@
+Example:vrdwalk
+Analysis Finished Successfully.
+Epsilon = 1.000000
+L= 1.000000
+Sensitivity Type: Non-expansive Expected linear-sensitive
+
+Data Generated for Table 3 in the paper:
+Runtime = 9.335054 seconds
+eta(b)=2500.0 - 2.5*p_x
+ 
+K = -7.500000
+d = 3.000000
+M = 2.500000
+c = 7.500000

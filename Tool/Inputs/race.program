@@ -1,0 +1,18 @@
+r_1~CUnif(2,4);
+#
+[p_h>=0 and p_t>=0 and p_t-p_h>=0]
+#
+[p_h-p_t>=0 and p_t-p_h+3>=0]
+#
+while p_h<=p_t do
+   p_t:=p_t+1;
+   if prob(0.5) then
+      p_h:=p_h+r_1
+   else
+      skip
+   fi
+od;
+end
+
+
+

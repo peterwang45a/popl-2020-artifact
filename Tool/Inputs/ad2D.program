@@ -1,0 +1,24 @@
+#
+[p_y-p_x>=0]
+#
+[p_x-p_y>=0 and p_y-p_x+3>=0]
+#
+while p_x<=p_y do
+   if prob(0.5) then
+      if prob(0.7) then
+         p_x:=p_x+3
+      else
+         p_y:=p_y+2
+      fi
+   else
+      if prob(0.7) then
+         p_x:=p_x+2
+      else
+         p_y:=p_y+1
+      fi
+   fi
+od;
+end
+
+
+
