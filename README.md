@@ -12,7 +12,7 @@ We assume that the input programs have simple assignment statemnts of the form x
 ## File Structure
 There are several folders in the artifact. Here is a description of each:
 * Inputs: contains all the twenty experimental examples (see Section 9.2 in the paper) and the related txt files about their initial valuations
-* Outputs: contains two folders named "Table2" and "Table3". When an experiment is run, the final output is automatically put in "Table2" or "Table3" (which corresponds to the results in Section 9.2)
+* Outputs: contains two folders named "Table2" and "Table3". When an experiment is run, the final output (which is a txt file named "*_log.txt") is automatically put in "Table2" or "Table3" (which corresponds to the results in Section 9.2)
 * Expected Outputs: contains the final outputs of the experimental examples as obtained by us (see Table 2 and Table 3 in Section 9.2)
 * CFG: contains a C++ tool for obtaining Control Flow Graphs of programs
 * Synthesis: contains a Matlab implementation for obtaining the results in our paper
@@ -59,11 +59,18 @@ For example, <br>
 ./run-example.sh mini <br>
 runs the experiment on the "mini-Roulette" only. <br>
 ./run-example.sh vmini <br>
-runs the experiment on the "mini-roulette variant" only. 
-**Note:** Please use the simplified example names in the artifact to run the above commands.
+runs the experiment on the "mini-roulette variant" only. <br>
+**Note:** Please use the `simplified example names` in the artifact to run the above commands.
 
 # Running on a Custom Input
-To run the algorithm on a custom program, please follow these steps:
+To run the algorithm on a custom program, please follow these steps: <br>
+1.**Create an input file**  whose filename suffix is ".program". This file contains a program, its preconditions, loop gurads and post conditions, and the distributions used for its sampling variables. See the example programs whose filename suffix are ".program" in the “Inputs” folder. Basically, the file should begin with the distributions. This is followed by one # sign. Next, put the preconditions and loop guards in one square bracket. That is followed by one # sign. Then, put the preconditions and post conditions in the bracket followed by one # sign. The main program starts after the third #. We assume this input file is called “input.program” and put it in the "Custom/Custom_inputs" folder.
+2.**Create a configuration file** named “inputconfig.txt” in the “Custom/Custom_inputs” folder. The configuration file contains the initial valuations for the custom program. See the example configuration files (whose suffix are "config.txt") in the “Inputs” folder.
+3.Run the Script by opening a terminal in the “Tool” folder and running this command:<br>
+./run-example.sh input <br>
+4.The final output will be put in the "Custom/Custom_outputs" folder automatically.
+**Note:** see "readme.txt" in the "Custom" folder, we also put one sample program and its output respectively in the "Custom/Custom_inputs" folder and "Custom/Custom_outputs" folder. (The jpg file describes this sample program.)
+
 
 
 
