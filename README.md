@@ -2,7 +2,7 @@ Proving Expected Sensitivity of Probabilistic Programs with Randomized Variable-
 ===========
 Guide to the Artifact Accompanying the Paper
 --------
-For convenience, we put a linux `virtual machine` in the `Google Drive` https://drive.google.com/drive/folders/1zyehJIQH-nHK0rNwBtwRn_2j7zNLuUay?usp=sharing. It is of big size (nearly 9 GB) because it contains all the dependencies and prerequisites. We put the artifact files in /home/Tool. You can download it and easily take an evaluation. The username is "hello", and the password is "asd1234".<br>
+For convenience, we put a linux `virtual machine` in the `Google Drive` https://drive.google.com/drive/folders/1wcZy232KlntIA6dIZu9rdbcctzUBILoc?usp=sharing. It is of big size (nearly 9 GB) because it contains all the dependencies and prerequisites. We put the artifact files in /home/Tool. You can download it and easily take an evaluation. The username is "hello", and the password is "asd1234".<br>
 
 # Overview
 This artifact contains our implementation of the RSM synthesis algorithm as described in the paper. In this work, we consider probabilistic while loops where the number of iterations is not fixed, but randomized and depends on the initial input values. The aim of this artifact is to synthesize linear RSM-maps for such programs, together with other conditions such as lipschitz continuity, bounded update, RSM-continuity and difference bound (which help prove expected sensitivity of such programs).
@@ -48,7 +48,7 @@ or <br>
 ./main-examples.sh table3 <br>
 The obtained results will also be put in "Outputs/Table2" folder or "Outputs/Table3" folder.<br>
 ## Warning
-It may take a little longer time in the vritual machine. This is because we are including a trial version of Matlab in the virtual machine (because Matlab is proprietary software). This trial version does not use multithreading and is significantly slower than a full-fledged Matlab. We've made a test and it took nearly 5 minutes to generate results in Table 2 and 8 minutes to generate results in Table 3.<br>
+It may take a little longer time to generate results for experimental examples in the vritual machine. This is because we are including a trial version of Matlab in the virtual machine (because Matlab is proprietary software). This trial version does not use multithreading and is significantly slower than a full-fledged Matlab. We've made a test and it took nearly 5 minutes to generate results in Table 2 and 8 minutes to generate results in Table 3.<br>
 
 **Note:** You can also run the experiment on a single example program or your own custom input. See below for more details.
 
