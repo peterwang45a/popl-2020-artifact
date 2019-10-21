@@ -63,7 +63,7 @@ For example, <br>
 runs the experiment on the "mini-Roulette" only. <br>
 ./run-example.sh vmini <br>
 runs the experiment on the "mini-roulette variant" only. <br>
-**Note:** Please use the `simplified example names` in the artifact to run the above commands.
+**Note:** Please use the `simplified example names` (see the first colunm of tables in `“example name.pdf”`) in the artifact to run the above commands.
 
 # Running on a Custom Input
 To run the algorithm on a custom program, please follow these steps: <br>
