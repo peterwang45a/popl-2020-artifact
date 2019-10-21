@@ -48,7 +48,7 @@ or <br>
 ./main-examples.sh table3 <br>
 The obtained results will also be put in "Outputs/Table2" folder or "Outputs/Table3" folder.<br>
 ## Warning
-It may take a little longer time to generate results for experimental examples in the vritual machine. This is because we are including a trial version of Matlab in the virtual machine (because Matlab is proprietary software). This trial version does not use multithreading and is significantly slower than a full-fledged Matlab. We've made a test and it took nearly 5 minutes to generate results in Table 2 and 8 minutes to generate results in Table 3.<br>
+It may take a little longer time to generate results for experimental examples in the vritual machine. This is because we are including a trial version of Matlab in the virtual machine (because Matlab is proprietary software). This trial version does not use multithreading and is significantly slower than a full-fledged Matlab. We've made a test on our PC (with an Intel Core i5 2.9GHz processor and 8GB of RAM) and it took nearly 5 minutes to generate results in Table 2 and 8 minutes to generate results in Table 3.<br>
 
 **Note:** You can also run the experiment on a single example program or your own custom input. See below for more details.
 
