@@ -1,0 +1,13 @@
+Example:american
+Analysis Finished Successfully.
+Epsilon = 1.000000
+L= 1.000000
+Sensitivity Type: Non-expansive Expected affine-sensitive
+
+Data Generated for Table 2 in the paper:
+Runtime = 17.855505 seconds
+eta(b)=20.266666666666666666666666666667*p_x - 20.266666666666666666666666666667
+ 
+K = -20.266667
+d = 35.000000
+M = 20.266667

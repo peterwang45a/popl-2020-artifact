@@ -1,0 +1,13 @@
+Example:vrace
+Analysis Finished Successfully.
+Epsilon = 1.000000
+L= 1.000000
+Sensitivity Type: Non-expansive Expected affine-sensitive
+
+Data Generated for Table 2 in the paper:
+Runtime = 11.798235 seconds
+eta(b)=1.4285714285714285714285714285714*p_t - 1.4285714285714285714285714285714*p_h
+ 
+K = -4.285714
+d = 4.000000
+M = 2.857143

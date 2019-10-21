@@ -1,0 +1,13 @@
+Example:vprdwalk
+Analysis Finished Successfully.
+Epsilon = 1.000000
+L= 1.000000
+Sensitivity Type: Non-expansive Expected affine-sensitive
+
+Data Generated for Table 2 in the paper:
+Runtime = 9.120210 seconds
+eta(b)=285.71428571428571428571428571429 - 0.28571428571428571428571428571429*p_x
+ 
+K = -1.428571
+d = 5.000000
+M = 0.285714

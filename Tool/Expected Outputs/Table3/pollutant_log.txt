@@ -1,0 +1,14 @@
+Example:pollutant
+Analysis Finished Successfully.
+Epsilon = 1.000000
+L= 1.000000
+Sensitivity Type: Non-expansive Expected linear-sensitive
+
+Data Generated for Table 3 in the paper:
+Runtime = 10.610215 seconds
+eta(b)=p_n - 5.0
+ 
+K = -3.000000
+d = 3.000000
+M = 1.000000
+c = 3.000000
