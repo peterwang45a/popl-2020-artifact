@@ -68,7 +68,7 @@ runs the experiment on the "mini-roulette variant" only. <br>
 # Running on a Custom Input
 To run the algorithm on a custom program, please follow these steps: <br>
 1.**Create an input file**  named "input.program" in the "Custom/Custom_inputs" folder. This file contains a program, its preconditions, loop gurads and post conditions, and the distributions used for its sampling variables. See the example programs whose filename suffix are ".program" in the “Inputs” folder. Basically, the file should begin with the distributions. This is followed by one # sign. Next, put the preconditions and loop guards in one square bracket. That is followed by one # sign. Then, put the preconditions and post conditions in the bracket followed by one # sign. The main program starts after the third # sign. <br>
-2.**Create a configuration file** named “inputconfig.txt” in the “Custom/Custom_inputs” folder. The configuration file contains the initial valuations for the custom program. See the example configuration files (whose suffix are "config.txt") in the “Inputs” folder.<br>
+2.**Create a configuration file** named “inputconfig.txt” in the “Custom/Custom_inputs” folder. The configuration file contains the initial valuations for the custom program. See the example configuration files (whose filename suffix are "config.txt") in the “Inputs” folder.<br>
 3.**Run the Script** by opening a terminal in the “Tool” folder and running this command:<br>
 ./run-example.sh input <br>
 4.**The final output** will be put in the "Custom/Custom_outputs" folder automatically. <br>
