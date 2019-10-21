@@ -14,15 +14,15 @@ We assume that the input programs have simple assignment statemnts of the form x
 
 ## File Structure
 There are several folders in the artifact. Here is a description of each:
-* Inputs: contains all the twenty experimental examples (see page 24, Section 9.2 in the paper) and the related txt files about their initial valuations
-* Outputs: contains two folders named "Table2" and "Table3". These two folders correspond to the results in Section 9.2 (see page 24, Table 2 and Table 3). When an experiment is run, the final output (which is a txt file named "*_log.txt") is automatically put in folder "Table2" or "Table3".
-* Expected Outputs: contains the final outputs of the experimental examples as obtained by us (see Table 2 and Table 3 in Section 9.2)
-* CFG: contains a C++ tool for obtaining Control Flow Graphs of programs
-* Synthesis: contains a Matlab implementation for obtaining the results in our paper
+* Inputs: contains all the twenty experimental examples (see page 24, Section 9.2 in the paper) and the related txt files about their initial valuations;
+* Outputs: contains two folders named "Table2" and "Table3". These two folders correspond to the results in Section 9.2 (see page 24, Table 2 and Table 3). When an experiment is run, the final output (which is a txt file named "*_log.txt") is automatically put in folder "Table2" or "Table3";
+* Expected Outputs: contains the final outputs of the experimental examples as obtained by us (see Table 2 and Table 3 in Section 9.2);
+* CFG: contains a C++ tool for obtaining Control Flow Graphs of programs;
+* Synthesis: contains a Matlab implementation for obtaining the results in our paper;
 * Custom: contains two folders named "Custom_inputs" and "Custom_outputs", the users can put the custom inputs into "Custom_inputs", and the final outputs will be put into "Custom_outputs" automatically by our bash scripts.
 
 ## Prerequisites
-Our codes are written in C++ and Matlab. C++ is used for creating the Control-Flow Graphs of input programs and Matlab is used for the main RSM synthesis algorithm (which involves symbolic computations and an optimization problem). Moreover, we use Bash scripts for connecting the different components. Hence, we suggest that you run the artifact in a Linux environment or the provided virtual machine.
+Our codes are written in C++ and Matlab. C++ is used for creating the Control-Flow Graphs of input programs and Matlab is used for the main RSM synthesis algorithm (which involves symbolic computations and optimization problems). Moreover, we use Bash scripts for connecting the different components. Hence, we suggest that you run the artifact in a Linux environment or the provided virtual machine.
 #### Complete List of Prerequisites
 * g++: for compiling C++ sources
 *	An environment capable of running Bash
