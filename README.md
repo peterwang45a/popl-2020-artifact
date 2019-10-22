@@ -35,7 +35,7 @@ You need to have a C++-11-compliant version of g++ installed.
 
 
 # Correspondence between the Paper and the Artifact
-The file “example name.pdf” contains a description of the correspondence between the example programs in the artifact and those in the paper (see Table 2 and 3 in Section 9.2). For example, in the paper there is an example named "mini-Roulette", we call it "mini" for brevity in the artifact.
+The file “example name.pdf” in the folder "Tool" contains a description of the correspondence between the example programs in the artifact and those in the paper (see Table 2 and 3 in Section 9.2). For example, in the paper there is an example named "mini-Roulette", we call it "mini" for brevity in the artifact.
 
 # Obtaining the Results Reported in the Paper
 To obtain all the results reported in the paper, simply open a terminal in the “Tool” folder and run the following command:<br>
