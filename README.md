@@ -72,7 +72,7 @@ To run the algorithm on a custom program, please follow these steps: <br>
 3.**Run the Script** by opening a terminal in the “Tool” folder and running this command:<br>
 ./run-example.sh input <br>
 4.**The final output** (named "input_log.txt") will be put in the "Custom/Custom_outputs" folder automatically. <br>
-**Note:** see "readme.txt" in the "Custom" folder, we also put one sample program and its output respectively in the "Custom/Custom_inputs" folder and "Custom/Custom_outputs" folder. (The jpg file describes this sample program).<br>
+**Note:** See "readme.txt" in the "Custom" folder, there are one case and its output respectively in the "Custom/Custom_inputs" folder and "Custom/Custom_outputs" folder. (The jpg file describes this example program).<br>
 You can replace the string "input" in the filenames "input.program" and "inputconfig.txt" with other strings when creating your own input (i.e. create files "hello.program" and "helloconfig.txt"), but do not make the string same as these simplified example names in `“example name.pdf”` (i.e. do not use "mini", "rdwalk", "vmini", etc.).
 
 ## If there is any problem, welcome to email wangpeixin@sjtu.edu.cn or peter007008@qq.com.
