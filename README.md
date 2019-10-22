@@ -8,7 +8,7 @@ For convenience, we put a linux `virtual machine` in the `Google Drive` https://
 This artifact contains our implementation of the RSM synthesis algorithm as described in the paper. In this work, we consider probabilistic while loops where the number of iterations is not fixed, but randomized and depends on the initial input values. The aim of this artifact is to synthesize linear RSM-maps for such programs, together with other conditions such as lipschitz continuity, bounded update, RSM-continuity and difference bound (which help prove expected sensitivity of such programs).
 
 # Assumptions
-We consider affine programs whose loop guard and update function are affine, and linear templates for an RSM-map, so it may fail for complex custom instances as well as these programs which have no linear RSM maps.
+We assume that the input program terminates. Moreover, we consider affine programs whose loop guard and update function are affine, and linear templates for an RSM-map, so it may fail for complex custom instances as well as these programs which have no linear RSM maps.
 
 # File Structure, Prerequisites and Compilation
 
